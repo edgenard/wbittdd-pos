@@ -9,7 +9,8 @@ RSpec.describe PointOfSale do
       "12345\r" => "$123.45",
       "23456" => "$234.56",
       "34567\r" => "$678.90",
-      "\n" => "Invalid Input no numbers inputted"
+      "\n" => "Invalid Input no numbers inputted",
+      "45678" => "Not Found"
     }
 
     barcode_to_price.each do |scan, output|
