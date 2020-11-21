@@ -3,7 +3,7 @@ Test Lists:
     - `barcode_scan(input)` method does not return @done
     - call price_output to get input` @done
     - "12345/n" -> "$123.45" @done
-    - "23456" -> "$234.56"
+    - "23456" -> "$234.56" @done
     - "34567/r" -> "$678.90"
     - "12345/n/r" -> "$123.45"
     - " 12345/n" -> "$123.45"
