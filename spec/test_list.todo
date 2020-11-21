@@ -8,10 +8,10 @@ Test Lists:
     - "12345/n/r" -> "$123.45" @done
     - " 12345/n" -> "$123.45" @done
     - "/n" -> "/n is Invalid Input" @done
-    - " /n" ->"/n Invalid Input"
-    - "/r" -> "/r Invalid Input"
-    - " /r" -> "/r Invalid Input"
+    - " /n" ->"/n Invalid Input" @done
+    - "/r" -> "/r Invalid Input" @done
+    - " /r" -> "/r Invalid Input" @done
     - "45678" -> "45678 Not found" @done
-    - "123/n" -> "Invalid Input must be exactly five digits
-    - "567890" -> Invalid Input must be exactly 5 digits
-    - "1" -> "Invalid
+    - "123/n" -> "Invalid Input must be exactly five digits @done
+    - "567890" -> Invalid Input must be exactly 5 digits @done
+    - "1" -> "Invalid @done

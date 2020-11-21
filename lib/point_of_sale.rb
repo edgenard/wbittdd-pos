@@ -3,7 +3,6 @@ class PointOfSale
     "12345" => "$123.45",
     "23456" => "$234.56",
     "34567" => "$678.90",
-    "" => "Invalid Input no numbers inputted",
     "Not Found" => "Not Found",
     "Wrong#" => "Invalid Input must be exactly five digits"
   }.freeze
@@ -17,7 +16,7 @@ class PointOfSale
 
   def sanitize_input(input)
     stripped_input =  input.strip
-    return "Wrong#" if stripped_input.match?(/\d/) && !stripped_input.match?(/^\d{5}$/)
+    return "Wrong#" if !stripped_input.match?(/^\d{5}$/)
     return 'Not Found' if BARCODE_TO_PRICE[stripped_input].nil?
 
     stripped_input

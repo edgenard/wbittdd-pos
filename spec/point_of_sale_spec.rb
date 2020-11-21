@@ -7,7 +7,7 @@ RSpec.describe PointOfSale do
       "12345" => "$123.45",
       "23456\n" => "$234.56",
       "34567\r" => "$678.90",
-      "\n" => "Invalid Input no numbers inputted",
+      "\n" => "Invalid Input must be exactly five digits",
       "45678" => "Not Found",
       "123\n" => "Invalid Input must be exactly five digits",
       "567890" => "Invalid Input must be exactly five digits",
