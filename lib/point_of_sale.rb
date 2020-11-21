@@ -17,7 +17,7 @@ class PointOfSale
 
   def sanitize_input(input)
     stripped_input =  input.strip
-    return "Wrong#" if input.match?(/\d/) && !input.match?(/\d{5}/)
+    return "Wrong#" if stripped_input.match?(/\d/) && !stripped_input.match?(/^\d{5}$/)
     return 'Not Found' if BARCODE_TO_PRICE[stripped_input].nil?
 
     stripped_input
