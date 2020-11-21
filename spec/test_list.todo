@@ -12,5 +12,6 @@ Test Lists:
     - "/r" -> "/r Invalid Input"
     - " /r" -> "/r Invalid Input"
     - "45678" -> "45678 Not found" @done
-    - "123/n" -> "123 Invalid Input"
-    - "1" -> "1 is Invalid Input"
+    - "123/n" -> "Invalid Input must be exactly five digits
+    - "567890" -> Invalid Input must be exactly 5 digits
+    - "1" -> "Invalid
