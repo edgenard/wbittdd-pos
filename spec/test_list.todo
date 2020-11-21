@@ -1,0 +1,16 @@
+Test Lists:
+  Can receive input string and outputs price or no price:
+    - `barcode_scan(input)` method does not return @done
+    - call price_output to get input` @done
+    - "12345/n" -> "$123.45" @done
+    - "23456" -> "$234.56"
+    - "34567/r" -> "$678.90"
+    - "12345/n/r" -> "$123.45"
+    - " 12345/n" -> "$123.45"
+    - "/n" -> "/n is Invalid Input"
+    - " /n" ->"/n Invalid Input"
+    - "/r" -> "/r Invalid Input"
+    - " /r" -> "/r Invalid Input"
+    - "45678" -> "45678 Not found"
+    - "123/n" -> "123 Invalid Input"
+    - "1" -> "1 is Invalid Input"
