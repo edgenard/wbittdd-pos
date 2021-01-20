@@ -15,3 +15,10 @@ Test Lists:
     - "123/n" -> "Invalid Input must be exactly five digits @done
     - "567890" -> Invalid Input must be exactly 5 digits @done
     - "1" -> "Invalid @done
+Constraints:
+    - Introduce Whole Value objects without specifying the underlying value
+    - Answer:
+        - How many tests can you write without needing to specify a value for the underlying Barcode?
+        - Which feature or test forces you to introduce a value property inside the Barcode?
+        - Which code, if any, does the Barcode class attract? How does this change the overall design of the system?
+        - What if you do the same thing with Price?
