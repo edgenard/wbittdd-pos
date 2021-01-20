@@ -22,3 +22,6 @@ Constraints:
         - Which feature or test forces you to introduce a value property inside the Barcode?
         - Which code, if any, does the Barcode class attract? How does this change the overall design of the system?
         - What if you do the same thing with Price?
+   Test for PointOfSale#price:
+     - Barcode matches to  a given price
+     - Barcode does not match any price
