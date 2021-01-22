@@ -1,7 +1,11 @@
 class PointOfSale
 
-  def price(barcode)
+  def initialize(price_map)
+    @price_map = price_map
+  end
 
+  def price(barcode)
+    @price_map[barcode]
   end
 end
 
