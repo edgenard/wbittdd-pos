@@ -24,4 +24,5 @@ Constraints:
         - What if you do the same thing with Price?
    Test for PointOfSale#price:
      - Barcode matches to  a given price @done
-     - Barcode does not match any price
+     - Barcode does not match any price @done
+     - Get right price for different barcodes
