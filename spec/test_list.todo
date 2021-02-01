@@ -25,4 +25,4 @@ Constraints:
    Test for PointOfSale#price:
      - Barcode matches to  a given price @done
      - Barcode does not match any price @done
-     - Get right price for different barcodes
+     - Get right price for different barcodes @done

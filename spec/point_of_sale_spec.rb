@@ -23,5 +23,18 @@ RSpec.describe PointOfSale do
         expect { pos.price(barcode) }.to raise_error(PointOfSale::PriceNotFoundError)
       end
     end
+
+    context "when the price map has multiple values" do
+      it "finds the right price for each barcode" do
+        barcode = Barcode.new
+        barcode2 = Barcode.new
+        price_map = {}
+        price_map[barcode] = 123.45
+        price_map[barcode2] = 234.56
+        pos = PointOfSale.new(price_map)
+
+        expect(pos.price(barcode2)).to eq 234.56
+      end
+    end
   end
 end
