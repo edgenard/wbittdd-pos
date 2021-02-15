@@ -7,10 +7,11 @@ RSpec.describe PointOfSale do
       it "returns price" do
         barcode = Barcode.new
         price_map = {}
-        price_map[barcode] = 123.45
+        price = Price.new
+        price_map[barcode] = price
         pos = PointOfSale.new(price_map)
 
-        expect(pos.price(barcode)).to eq 123.45
+        expect(pos.price(barcode)).to eq price
       end
     end
 
@@ -29,11 +30,13 @@ RSpec.describe PointOfSale do
         barcode = Barcode.new
         barcode2 = Barcode.new
         price_map = {}
-        price_map[barcode] = 123.45
-        price_map[barcode2] = 234.56
+        price = Price.new
+        price2 = Price.new
+        price_map[barcode] = price
+        price_map[barcode2] = price2
         pos = PointOfSale.new(price_map)
 
-        expect(pos.price(barcode2)).to eq 234.56
+        expect(pos.price(barcode2)).to eq price2
       end
     end
   end

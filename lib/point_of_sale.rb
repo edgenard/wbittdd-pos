@@ -14,3 +14,7 @@ end
 
 class Barcode
 end
+
+class Price
+
+end
